@@ -5,11 +5,11 @@ module.exports = function(grunt) {
     grunt.initConfig({
         meta: {
             version: '0.1.0',
-            banner: '/*! PROJECT_NAME - v<%= meta.version %> - ' +
+            banner: '/*! unkept - v<%= meta.version %> - ' +
                 '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-                '* http://PROJECT_WEBSITE/\n' +
+                '* https://github.com/kpuputti/unkept\n' +
                 '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
-                'YOUR_NAME; Licensed MIT */'
+                'Kimmo Puputti <kpuputti@gmail.com>; Licensed MIT */'
         },
         lint: {
             files: ['grunt.js', 'lib/**/*.js', 'test/**/*.js']
@@ -19,14 +19,14 @@ module.exports = function(grunt) {
         },
         concat: {
             dist: {
-                src: ['<banner:meta.banner>', '<file_strip_banner:lib/FILE_NAME.js>'],
-                dest: 'dist/FILE_NAME.js'
+                src: ['<banner:meta.banner>', '<file_strip_banner:lib/unkept.js>'],
+                dest: 'dist/unkept.js'
             }
         },
         min: {
             dist: {
                 src: ['<banner:meta.banner>', '<config:concat.dist.dest>'],
-                dest: 'dist/FILE_NAME.min.js'
+                dest: 'dist/unkept.min.js'
             }
         },
         watch: {
