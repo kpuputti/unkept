@@ -1,6 +1,8 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
+    'use strict';
+
     // Project configuration.
     grunt.initConfig({
         meta: {
@@ -35,16 +37,31 @@ module.exports = function(grunt) {
         },
         jshint: {
             options: {
+
+                // enforcing options
+
+                camelcase: true,
                 curly: true,
                 eqeqeq: true,
+                forin: true,
                 immed: true,
+                indent: 4,
                 latedef: true,
                 newcap: true,
                 noarg: true,
-                sub: true,
+                nonew: true,
+                quotmark: 'single',
                 undef: true,
+                unused: true,
+                strict: true,
+                trailing: true,
+
+                // relaxing options
+
                 boss: true,
-                eqnull: true
+                browser: true,
+                devel: true
+
             },
             globals: {}
         },
