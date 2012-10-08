@@ -39,14 +39,14 @@ The progressHandler is optional.
 
 Specify functions to be called:
 
-deferred.then()
-deferred.done()
-deferrend.fail()
+- deferred.then()
+- deferred.done()
+- deferrend.fail()
 
 "call" the functions with the supplied args:
 
-deferred.resolve(args)
-deferred.reject(args)
+- deferred.resolve(args)
+- deferred.reject(args)
 
 ### States
 
@@ -64,20 +64,20 @@ arguments previously provided."
 
 jQuery Deferred API:
 
-deferred.always()
-deferred.done()
-deferred.fail()
-deferred.notify()
-deferred.notifyWith()
-deferred.pipe()
-deferred.progress()
-deferred.promise()
-deferred.reject()
-deferred.rejectWith()
-deferred.resolve()
-deferred.resolveWith()
-deferred.state()
-deferred.then()
+- deferred.always()
+- deferred.done()
+- deferred.fail()
+- deferred.notify()
+- deferred.notifyWith()
+- deferred.pipe()
+- deferred.progress()
+- deferred.promise()
+- deferred.reject()
+- deferred.rejectWith()
+- deferred.resolve()
+- deferred.resolveWith()
+- deferred.state()
+- deferred.then()
 
 ## when.js
 
@@ -85,15 +85,15 @@ deferred.then()
 
 ### API
 
-when.defer()
-when.all()
-when.any()
-when.some()
-when.map()
-when.reduce()
-when.chain()
+- when.defer()
+- when.all()
+- when.any()
+- when.some()
+- when.map()
+- when.reduce()
+- when.chain()
 
-deferred.promise
+- deferred.promise
 
 ## dojo/Deferred
 
@@ -116,16 +116,16 @@ completes"
 
 ### API
 
-deferred.promise
-deferred.isResolved()
-deferred.isRejected()
-deferred.isFulfilled()
-deferred.isCanceled()
-deferred.progress(update, strict)
-deferred.resolve(value, strict)
-deferred.reject(error, strict)
-deferred.then(callback, errback, progback)
-deferred.cancel(reason, strict)
+- deferred.promise
+- deferred.isResolved()
+- deferred.isRejected()
+- deferred.isFulfilled()
+- deferred.isCanceled()
+- deferred.progress(update, strict)
+- deferred.resolve(value, strict)
+- deferred.reject(error, strict)
+- deferred.then(callback, errback, progback)
+- deferred.cancel(reason, strict)
 
 ### Usage
 
