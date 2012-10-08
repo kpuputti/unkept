@@ -41,7 +41,11 @@ reject the promise, only the first one applies):
     deferred.reject(new Error('could not resolve'));
 
 which triggers the error handler on the `promise` object and
-'rejected: could not resolve' is logget to the console.
+'rejected: could not resolve' is logged to the console.
+
+## Chaining, `all` etc.
+
+TODO
 
 ## Example
 
