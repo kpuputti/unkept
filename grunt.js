@@ -63,7 +63,10 @@ module.exports = function(grunt) {
                 devel: true
 
             },
-            globals: {}
+            globals: {
+                define: true,
+                require: true
+            }
         },
         uglify: {}
     });
